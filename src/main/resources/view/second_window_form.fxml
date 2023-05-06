@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.send_mail_using_javafx.controller.SecondWindowFormController">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="487.0" layoutX="313.0" layoutY="68.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/message_sent.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="35.0" layoutY="68.0" prefHeight="392.0" prefWidth="298.0" style="-fx-background-color: #f0f0f5; -fx-background-radius: 30px;">
+         <children>
+            <JFXTextField fx:id="txtGmail" focusColor="#0505b0" labelFloat="true" layoutX="31.0" layoutY="30.0" onAction="#txtGmailOnAction" onKeyPressed="#txtGmailOnKeyPressed" prefHeight="31.0" prefWidth="236.0" promptText="Gmail" unFocusColor="#3b3b3c">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSubject" focusColor="#0505b0" focusTraversable="false" labelFloat="true" layoutX="31.0" layoutY="106.0" onAction="#txtSubjectOnAction" prefHeight="31.0" prefWidth="236.0" promptText="Subject" unFocusColor="#3b3b3c">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="txtMessage" focusColor="#0505b0" focusTraversable="false" labelFloat="true" layoutX="26.0" layoutY="182.0" onKeyPressed="#txtMessageOnKeyPressed" prefHeight="138.0" prefWidth="246.0" promptText="Message" unFocusColor="#3b3b3c">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="218.0" layoutY="347.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="60.0" style="-fx-background-color: lightgreen;" text="Send">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Label layoutX="50.0" layoutY="22.0" prefHeight="46.0" prefWidth="174.0" text="SEND GMAIL">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.4567307692307693" endY="0.389423076923077" startX="0.25116691560866317">
+               <stops>
+                  <Stop color="#141313" />
+                  <Stop color="#0505b0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
