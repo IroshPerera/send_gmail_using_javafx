@@ -33,6 +33,7 @@ public class FirstWindowFormController implements Initializable {
         stage.setScene(scene);
         stage.setTitle("Send Mail");
         stage.centerOnScreen();
+        stage.setResizable(false);
         } catch (IOException e) {
             e.printStackTrace();
         }

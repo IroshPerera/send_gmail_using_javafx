@@ -17,6 +17,7 @@ public class Launcher extends Application {
         Image icon = new Image(getClass().getResourceAsStream("/img/logo.png")); //Setting the icon to the stage
         stage.getIcons().add(icon);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
