@@ -23,7 +23,7 @@ public class Mail implements Runnable{
     }
 
     public void outMail() throws MessagingException {
-        String from = "pererairosh6@gmail.com"; //sender's email address
+        String from = "javatextmail@gmail.com"; //sender's email address
         String host = "localhost";
 
         Properties properties = new Properties();
